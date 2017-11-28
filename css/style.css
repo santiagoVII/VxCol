@@ -1,0 +1,116 @@
+/* General css
+   ========================================================================== */
+body{
+  font-family: helvetica;
+}
+
+figure{
+  margin: 0;
+}
+
+/* utils css
+   ========================================================================== */
+.button {
+  line-height: 2.5;
+  font-weight: 700;
+  text-shadow: rgba(0,0,0,.5) 0px -1px 0px;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .15s;
+  -webkit-transition-timing-function: ease-in-out;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: .48em .8em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.button:active {
+  margin-top: 10px;
+}
+
+.lightbg-blue {
+  background-color: #64a8a6;
+  color: white;
+  -webkit-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  -moz-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  -ie-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+}
+.lightbg-blue:hover {
+  background-color: #73c2c0;
+}
+.lightbg-blue:active {
+  background-color: #5a9896;
+  -webkit-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  -moz-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  -ie-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+}
+
+/* header
+   ========================================================================== */
+.header{
+  position: relative;
+  background-color: #283B48;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.logo img{
+  height: 67px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li{
+  display: flex;
+  list-style: none;
+}
+
+.menu a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.menu li:hover a{
+  border-top: 3px solid #7dcd40;
+}
+
+.menu li a.active{
+  border-top: 3px solid #7dcd40;
+}
+
+.menu li a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left: 1px solid white;
+  height: 24px;
+}
+
+.menu li:first-child a:before,
+.menu li:last-child a:before,
+.menu li:last-child a{
+  border: none;
+}
+
+.menu li:last-child{
+  align-items: center;
+  margin-left: 15px;
+}
