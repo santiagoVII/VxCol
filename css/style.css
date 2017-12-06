@@ -36,15 +36,23 @@ figure{
   -ie-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
   box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
 }
+
 .lightbg-blue:hover {
   background-color: #73c2c0;
 }
+
 .lightbg-blue:active {
   background-color: #5a9896;
   -webkit-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
   -moz-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
   -ie-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
   box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+}
+
+.container{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* header
@@ -113,4 +121,68 @@ figure{
 .menu li:last-child{
   align-items: center;
   margin-left: 15px;
+}
+
+/* banner
+   ========================================================================== */
+.banner-blog{
+  position: relative;
+  background-color: #efeff0;
+  padding-top: 5px;
+}
+
+.banner-blog .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-blog article{
+  width: 1200px;
+  height: 600px;
+  margin-top: 5px;
+  background: url('../img/valle-del-cocora.png') center top;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search{
+  align-self: flex-end;
+}
+
+.bg-art-banner{
+  width: 600px;
+  background-color: rgba(239, 239, 240, 0.9);
+  align-self: flex-end;
+  margin: 0 0 30px 15px;
+}
+
+.banner-blog article header h2{
+  color: #515151;
+  margin: 30px 20px 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  border-bottom: 1px solid #b8b8b8
+}
+
+.banner-blog article footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px;
+  color: #636262;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.banner-blog article footer figure{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.banner-blog article footer figure img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
