@@ -277,3 +277,18 @@ input{
 
 /* Pagination
    ========================================================================== */
+.footer{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.footer p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+}
