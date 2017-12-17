@@ -1,0 +1,294 @@
+/* General css
+   ========================================================================== */
+body{
+  font-family: helvetica;
+}
+
+figure{
+  margin: 0;
+}
+
+input{
+  font-family: helvetica;
+  font-size: 14px;
+  color: #636262;
+  line-height: 1.5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* utils css
+   ========================================================================== */
+.button {
+  line-height: 2.5;
+  font-weight: 700;
+  text-shadow: rgba(0,0,0,.5) 0px -1px 0px;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: .15s;
+  -webkit-transition-timing-function: ease-in-out;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: .48em .8em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.button:active {
+  margin-top: 10px;
+}
+
+.lightbg-blue {
+  background-color: #64a8a6;
+  color: white;
+  -webkit-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  -moz-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  -ie-box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+  box-shadow: 0px 0px 0px 1px #4e8381 inset, 0px 0px 0px 2px #74b6b4 inset, 0px 4px 0px 0px #4a7c7b, 0px 5px 0px 0px #355655, 0px 8px 0px 0px rgba(0,0,0,.15);
+}
+
+.lightbg-blue:hover {
+  background-color: #73c2c0;
+}
+
+.lightbg-blue:active {
+  background-color: #5a9896;
+  -webkit-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  -moz-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  -ie-box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+  box-shadow: 0px 0px 0px 1px #589391 inset, 0px 0px 0px 2px #65a9a7 inset, 0px 1px 0px 0px #355655, 0px 3px 0px 0px rgba(0,0,0,.15);
+}
+
+.container{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header
+   ========================================================================== */
+.header{
+  position: relative;
+  background-color: #283B48;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.logo img{
+  height: 67px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li{
+  display: flex;
+  list-style: none;
+}
+
+.menu a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.menu li:hover a{
+  border-top: 3px solid #7dcd40;
+}
+
+.menu li a.active{
+  border-top: 3px solid #7dcd40;
+}
+
+.menu li a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left: 1px solid white;
+  height: 24px;
+}
+
+.menu li:first-child a:before,
+.menu li:last-child a:before,
+.menu li:last-child a{
+  border: none;
+}
+
+.menu li:last-child{
+  align-items: center;
+  margin-left: 15px;
+}
+
+/* banner
+   ========================================================================== */
+.banner-blog{
+  position: relative;
+  background-color: #efeff0;
+  padding-top: 5px;
+}
+
+.banner-blog .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-blog article{
+  width: 1200px;
+  height: 600px;
+  margin-top: 5px;
+  background: url('../img/valle-del-cocora.png') center top;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search{
+  align-self: flex-end;
+  display: flex;
+}
+
+.search button{
+  flex: 1;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+
+.bg-art-banner{
+  width: 600px;
+  background-color: rgba(239, 239, 240, 0.9);
+  align-self: flex-end;
+  margin: 0 0 30px 15px;
+}
+
+.banner-blog article header h2{
+  color: #515151;
+  margin: 30px 20px 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  border-bottom: 1px solid #b8b8b8
+}
+
+.banner-blog article footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 20px;
+  color: #636262;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.banner-blog article footer figure{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.banner-blog article footer figure img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* main blog
+   ========================================================================== */
+.main .container{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-art{
+  width: calc((100%/3) - 50px);
+  margin: 0 25px 20px;
+}
+
+.blog-art figure img{
+  width: 100%;
+}
+
+.blog-art figcaption{
+  font-size: 25px;
+  color: #515151;
+  margin-bottom: 15px;
+}
+
+.blog-art footer{
+  border-top: 1px solid #b8b8b8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #636262;
+}
+/* Pagination
+   ========================================================================== */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.pagination ul{
+  padding: 0;
+}
+
+.pagination li{
+  display: inline-block;
+}
+
+.pagination button{
+  background-color: #eaeaea;
+  color: #666666;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  line-height: 2;
+  margin: 0 5px;
+}
+
+.pagination > *{
+  margin: 0 5px;
+}
+
+.pagination li.active button{
+  background: transparent;
+  border: none;
+}
+
+/* Pagination
+   ========================================================================== */
+.footer{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.footer p{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+}
