@@ -8,6 +8,16 @@ figure{
   margin: 0;
 }
 
+input{
+  font-family: helvetica;
+  font-size: 14px;
+  color: #636262;
+  line-height: 1.5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 /* utils css
    ========================================================================== */
 .button {
@@ -147,6 +157,17 @@ figure{
 
 .search{
   align-self: flex-end;
+  display: flex;
+}
+
+.search button{
+  flex: 1;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-left: 5px;
 }
 
 .bg-art-banner{
