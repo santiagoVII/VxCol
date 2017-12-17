@@ -238,3 +238,42 @@ input{
   padding: 10px 0;
   color: #636262;
 }
+/* Pagination
+   ========================================================================== */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+.pagination ul{
+  padding: 0;
+}
+
+.pagination li{
+  display: inline-block;
+}
+
+.pagination button{
+  background-color: #eaeaea;
+  color: #666666;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  line-height: 2;
+  margin: 0 5px;
+}
+
+.pagination > *{
+  margin: 0 5px;
+}
+
+.pagination li.active button{
+  background: transparent;
+  border: none;
+}
+
+/* Pagination
+   ========================================================================== */
