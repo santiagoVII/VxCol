@@ -207,3 +207,34 @@ input{
   border-radius: 50%;
   margin-right: 10px;
 }
+
+/* main blog
+   ========================================================================== */
+.main .container{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-art{
+  width: calc((100%/3) - 50px);
+  margin: 0 25px 20px;
+}
+
+.blog-art figure img{
+  width: 100%;
+}
+
+.blog-art figcaption{
+  font-size: 25px;
+  color: #515151;
+  margin-bottom: 15px;
+}
+
+.blog-art footer{
+  border-top: 1px solid #b8b8b8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: #636262;
+}
